@@ -1,0 +1,384 @@
+body{
+	font-family: 'メイリオ', 'Hirahino Kaku Gothic Pro' sans-serif;
+	background-color: #e5e5e5;
+	margin: 0;
+}
+
+a	{
+	color: #017acd;
+}
+
+/* コンテナ */
+div#container	{
+	width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #fff;
+	padding: 0 40px;
+	-webkit-box-shadow: 0px 0px 50px #bbbbbb;
+	box-shadow: 0px 0px 50px #bbbbbb;
+	background-image: url('circle.png'), url('circle-yellow.png');
+	background-repeat: no-repeat;
+	background-position: 15px 420px, 90px 500px;
+	background-size: 94px 94px, 30px 30px;
+	position: relative;
+	overflow: hidden;
+}
+
+/* ヘッダー */
+header#pageheader	{
+	background: none;
+	padding: 15px 0 0;
+}
+
+header#pageheader h1	{
+	margin: 0;
+	float: left;
+	font-size: 40px;
+	font-weight: normal;
+	font-family: 'Righteous', cursive;
+}
+
+header#pageheader h2	{
+	color: #666666;
+	font-size: 0.75em;
+	margin: 0;
+	padding-top: 20px;
+	text-align: right;
+	font-weight: normal;
+}
+
+ nav {
+	clear: both;
+}
+
+/* メニュー */
+nav ul	{
+	font-size: 0.75em;
+	margin-top: 0;
+	margin-bottom: 10px;
+	margin-left: 0;
+	padding-left: 0;
+	height: 30px;
+	background-color: #333333;
+	border-radius: 5px;
+	background:-webkit-linear-gradient(#777 0%, #444 50%, #333 51%, #555 100%);
+	background:-moz-linear-gradient(#777 0%, #444 50%, #333 51%, #555 100%);
+	background:-o-linear-gradient(#777 0%, #444 50%, #333 51%, #555 100%);
+	background:-ms-linear-gradient(#777 0%, #444 50%, #333 51%, #555 100%);
+
+}
+
+nav ul li	{
+	list-style-type: none;
+	float: left;
+}
+
+nav ul li a	{
+	display: block;
+	width: 120px;
+	line-height: 30px;
+	text-decoration: none;
+	text-align: center;
+	color: #ffffff;
+	border-right: solid 1px rgba(255, 255, 255, 0.2);
+}
+
+nav ul li a:hover	{
+	background-color: rgba(1, 122, 205, 0.3);
+}
+
+nav ul li:first-of-type a:hover{
+	border-radius: 5px 0 0 5px;
+
+}
+
+/* コンテンツ */
+article	{
+	width: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+article header{
+	margin: 20px 0 10px;
+	padding: 18px;
+	border: 1px solid #aaa;
+	border-radius: 5px;
+	-webkit-box-shadow: 0 2px 3px #ccc;
+	box-shadow: 0 2px 3px #ccc,
+				0 0 4px 3px #fff inset;
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+article header h1	{
+	background: none;
+	font-size: 28px;
+	color: #000000;
+	line-height: 45px;
+	padding-left: 0;
+	margin: 0;
+	font-weight: normal;
+	float: left;
+}
+
+article header p{
+	font-size: 16px;
+	color: #444;
+	margin-left: 300px;
+}
+
+article section{
+	clear: both;
+	margin: 20px 0 10px;
+	padding: 18px;
+	border: 1px solid #aaa;
+	border-radius: 5px;
+	overflow: hidden;
+	background:-webkit-gradient(linear, left top, left bottom, from(#777), color-stop(50%,#444), color-stop(50%,#333), to(#dfdfdf));
+	background:-webkit-linear-gradient(#fff 0%, #dfdfdf 100%);
+	background:-moz-linear-gradient(#fff 0%, #dfdfdf 100%);
+	background:-o-linear-gradient(#fff 0%, #dfdfdf 100%);
+	background:-ms-linear-gradient(#fff 0%, #dfdfdf 100%);
+	-webkit-box-shadow: 0 2px 3px #ccc;
+	box-shadow: 0 2px 3px #ccc,
+				0 0 4px 3px #fff inset;
+}
+
+article section h1	{
+	background: none;
+	font-size: 24px;
+	font-weight: normal;
+	line-height: 22px;
+	padding-left: 0;
+	margin-top: 0;
+	margin-bottom: 20px;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+article p	{
+	font-size: 0.75em;
+	line-height: 1.6;
+	margin-top: 10px;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+
+/* フッター */
+footer	{
+	color: #888;
+	margin-top: 25px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	clear: both;
+	border-top: 1px solid #aaa;
+}
+
+small	{
+	font-size: 10px;
+	font-style: normal;
+	text-align: left;
+	display: block;
+}
+
+small::before{
+	content: 'GREEN LEAF';
+	display: block;
+	width: 200px;
+	padding: 10px 0;
+	background-color: #800;
+	color: #fff;
+	font-family: 'Righteous', cursive;
+	font-size: 16px;
+	text-align: center;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	-webkit-transform: rotate(-45deg) translate(62px, 20px);
+	-moz-transform: rotate(-45deg) translate(62px, 20px);
+	-o-transform: rotate(-45deg) translate(62px, 20px);
+	-ms-transform: rotate(-45deg) translate(62px, 20px);
+}
+
+
+/* 画像の配置 */
+/*img.photo-odd	{
+	float: right;
+	margin-left: 15px;
+	margin-bottom: 15px;
+}
+
+img.photo-even	{
+	float: left;
+	margin-right: 15px;
+	margin-bottom: 15px;
+}*/
+
+figure{
+	margin: 0;
+}
+
+article section:nth-of-type(odd) figure{
+	float: right;
+	margin: 0 0 0 15px;
+}
+
+article section:nth-of-type(even) figure{
+	float: left;
+	margin: 0 15px 0 0;
+}
+
+article section figcaption{
+	color: #666;
+	font-size: 10px;
+	display: block;
+}
+
+article section:nth-of-type(odd) figcaption{
+	text-align: right;
+}
+
+
+
+
+/*--------------pc用の設定ここから--------*/
+@media only screen and (min-width: 900px){
+
+/*三段組*/
+article div[itemprop="articleBody"]{
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-box;
+}
+
+article section{
+	width: 288px;
+	margin-right: 18px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	overflow: visible;
+}
+
+article section h1{
+	height: 48px;
+	line-height: 1.2;
+}
+
+article section:nth-of-type(1n) figure{
+	float: none;
+	margin: 0;
+}
+
+article section:nth-of-type(1n) figcaption{
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+/*三段組IE8-9とopera*/
+article section{
+	clear: none;
+	float: left;
+	position: relative;
+}
+
+article section + section + section{
+	margin-right: 0;
+}
+
+}/*--------------pc用の設定ここまで--------*/
+
+
+/*-----------タブレット用の設定ここから--------*/
+
+@media only screen and (min-width:600px) and (max-width:899px) {
+
+div#container{
+	width: 100%;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	padding: 0 10px;
+	background-position: -3px 380px, 100px 460px;
+}
+
+header#pageheader img{
+	width: 100%;
+	height: auto;
+}
+
+nav ul{
+	font-size: 10px;
+}
+
+nav ul li a{
+	width: 100px;
+}
+
+}
+
+
+/*-----------タブレット用の設定ここまで--------*/
+
+/*-----------スマートフォン用の設定ここから--------*/
+
+@media only screen and (max-width:599px) {
+
+div#container{
+	width: 100%;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	padding: 0 10px;
+	background-position: -3px 220px, 100px 280px;
+}
+
+header#pageheader img{
+	width: 100%;
+	height: auto;
+}
+
+nav ul{
+	font-size: 8px;
+}
+
+nav ul li a{
+	width: auto;
+	display: inline-block;
+	padding: 0 3px;
+}
+
+header#pageheader h1{
+	font-size: 24px;
+	margin-right: 15px;
+}
+
+header#pageheader h2{
+	font-size: 10px;
+	text-align: left;
+	padding: 0;
+}
+
+
+article header h1{
+	float: none;
+}
+
+article header p{
+	margin: 0;
+}
+
+article section:nth-of-type(1n) figure{
+	float: none;
+	margin: 0;
+	text-align: center;
+}
+
+article section:nth-of-type(1n) figcaption{
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+}/*-----------スマートフォン用の設定ここまで--------*/
